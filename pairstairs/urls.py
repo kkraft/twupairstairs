@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
      url(r'^pairs/$', 'pairs.views.index'),
+     url(r'^pairs/(?P<pair_id>\d+)/$','pairs.views.detail'),
     # url(r'^pairstairs/', include('pairstairs.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
